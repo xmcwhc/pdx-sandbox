@@ -17,7 +17,7 @@ if [ -z "$2" ]
 		java -jar $DAPP_HOME/java/$1 
 	else 
 		echo "Using custom security profile" 
-		java -Djava.security.properties==$DAPP_HOME/jsec/$2 -jar $DAPP_HOME/java/$1 
+		java -Djava.security.manager -Djava.security.policy=$DAPP_HOME/jsec/$2 -jar $DAPP_HOME/java/$1 
 fi
 
 echo "Shutdown chain code"

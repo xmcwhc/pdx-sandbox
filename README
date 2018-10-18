@@ -9,9 +9,9 @@
 
 3/ Run dapp-java container
 
-	sudo docker run -it --memory=100m --memory-swap="200m" --cpus="0.01" -v $PDX_HOME/dapps:/dapps/ dapp-java HelloWorld.jar
+	sudo docker run -it --memory=100m --memory-swap="200m" --cpus="0.01" --storage-opt size=120m -v $PDX_HOME/dapps:/dapps/ dapp-java HelloWorld.jar
 
-	Here, the memory and cpus limits are from chaincode deployment requirements. 
+	Here, the storagr, memory and cpu limits are from chaincode deployment requirements. 
 	The cost of deploying and invoking a dapp proportionately correlates to the 
 	memory, cpu, disk and network requirements.
  

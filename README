@@ -3,13 +3,15 @@
 
 	https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
-2/ Build dapp-java image
+2/ Build docker image
 
-	sudo ducoker build -t dapp-java:latest .
+	sudo ducoker build -t dapp-java:latest -f Dockerfile.java .
+	sudo ducoker build -t dapp-exec:latest -f Dockerfile.java .
 
-3/ Run dapp-java container
+3/ Run cc container
 
 	sudo docker run -it --memory=10m --cpus="0.01" -v $PDX_HOME/dapps:/dapps/ dapp-java HelloWorld.jar
+	sudo docker run -it --memory=10m --cpus="0.01" -v $PDX_HOME/dapps:/dapps/ dapp-exec test 
 
 	Here, the memory and cpus limits are from chaincode deployment requirements, which tie to the cost
         of deploying a chaincode.

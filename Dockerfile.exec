@@ -2,6 +2,14 @@
 #  
 #       PDX blockchain hypercloud sandbox for NATIVE smart-contracts 
 #
+#       On PDX blockchain hypercloud, a smart contract has to be sandboxed
+#       for isolation and security/resource control, in order to minimize 
+#       the impact of a potentially harmful smart contract affecting the 
+#       hosting node and/or other smart contracts on the same host.
+
+#	This sandbox applies to statically-linked, native X64 smart-contracts
+#	executable on barebone busybox-glibc systems.
+#
 # VERSION 0.1
 
 

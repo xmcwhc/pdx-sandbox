@@ -1,6 +1,14 @@
 # dapp-java
 #
-# 	PDX blockchain hypercloud sandbox for java-based smart-contracts 	
+#       PDX blockchain hypercloud sandbox for JAVA-based smart-contracts
+#
+#       On PDX blockchain hypercloud, a smart contract has to be sandboxed
+#       for isolation and security/resource control, in order to minimize
+#       the impact of a potentially harmful smart contract affecting the
+#       hosting node and/or other smart contracts on the same host.
+#
+#       This sandbox applies to openJDK 8 compliant, single-jar smart-contracts
+#       executable on barebone alpine Linux systems. 
 #
 # VERSION 0.1
 

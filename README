@@ -5,8 +5,8 @@
 
 2/ Build docker image
 
-	sudo ducoker build -t dapp-java:latest -f Dockerfile.java .
-	sudo ducoker build -t dapp-exec:latest -f Dockerfile.exec .
+	sudo docker build -t dapp-java:latest -f Dockerfile.java .
+	sudo docker build -t dapp-exec:latest -f Dockerfile.exec .
 
 3/ Run cc container
 
@@ -16,4 +16,8 @@
 	Here, the storage, memory and cpu limits are from chaincode deployment requirements. 
 	The cost of deploying and invoking a dapp proportionately correlates to the 
 	memory, cpu, disk and network requirements.
- 
+
+4) Start/stop dapp-* container
+
+	Via open-sourced, security-hardened setuid'd sandboxer 
+	 

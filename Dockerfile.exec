@@ -1,4 +1,13 @@
+# dapp-exec
+#  
+#       PDX blockchain hypercloud sandbox for NATIVE smart-contracts 
+#
+# VERSION 0.1
+
+
 FROM busybox:1.29.3-glibc 
+
+LABEL maintainer="jz@pdx.ltd"
 
 COPY run-exec.sh /run.sh
 

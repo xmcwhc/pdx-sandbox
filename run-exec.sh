@@ -5,7 +5,7 @@ DAPP_HOME=/dapps
 if [ -z "$1" ]
 	then	
 		echo "No exec supplied, exiting"	
-		exit -1
+		exit 1
 
 fi
 

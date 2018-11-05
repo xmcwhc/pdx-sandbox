@@ -7,7 +7,7 @@ echo "Starting chain code"
 if [ -z "$1" ]
 	then	
 		echo "No argument supplied, exiting"	
-		exit -1
+		exit 1
 
 fi
 

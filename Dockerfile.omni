@@ -13,6 +13,8 @@
 #
 #	2) Statically linked, x64 Linux ELF formated executable program
 #
+#	3) Other executables with some tweaks, e.g. via a wrapper script
+#
 # VERSION 0.1
 
 FROM debian:9.5-slim 

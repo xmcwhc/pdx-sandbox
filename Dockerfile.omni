@@ -1,6 +1,6 @@
 # dapp-sandbox
 #
-#       PDX blockchain hypercloud sandbox for JAVA-based smart-contracts
+#       PDX blockchain hypercloud sandbox for smart-contract applications
 #
 #       On PDX blockchain hypercloud, a smart contract has to be sandboxed
 #       for isolation and security/resource control, in order to minimize
